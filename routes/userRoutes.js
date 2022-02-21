@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-
 const {
     
     GetAllUser,
@@ -12,8 +11,6 @@ const {
 } = require('../controller/userController')
 
 
-
-
 router.get("/", GetAllUser)
 // router.get("/details/:id/", GetUser)
 // // router.get("/create", GetCreateUSer)
@@ -22,8 +19,6 @@ router.get("/", GetAllUser)
 
 router.route('/create').get(GetCreateUSer).post(CreateUser)
 router.route('/details/:id/').get(GetUser).delete(DeleteUser)
-
-
 
 
 

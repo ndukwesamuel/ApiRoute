@@ -1,8 +1,6 @@
 
 const {Usermodel} = require('../models/User')
 
-
-
 const GetAllUser =  (req, res) => {
 
     Usermodel.find().sort({createdAt:-1})
